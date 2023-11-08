@@ -4,5 +4,5 @@ d = []
 def square_matrix_simple(matrix=[]):
     for row in matrix:
         for c in row:
-            d[i] = (matrix[i]) ** 2
+            d[c][row] = (matrix[c]) ** 2
     return d
