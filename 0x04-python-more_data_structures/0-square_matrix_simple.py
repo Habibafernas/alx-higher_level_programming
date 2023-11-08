@@ -3,6 +3,6 @@
 d = []
 def square_matrix_simple(matrix=[]):
     for row in matrix:
-        for c in row:
-            d[c]= (matrix[c]) ** 2
+        r = list(map(lambda x: x**2, row))
+        d.append(r)
     return d
