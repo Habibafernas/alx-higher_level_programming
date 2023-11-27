@@ -52,4 +52,4 @@ class Rectangle:
         return ((self.__width * 2) + (self.__height * 2))
     for i in range(self.__height):
         for j in range(self.__width):
-            print({""}.format.("#"))
+            print({""}.format("#"))
