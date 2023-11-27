@@ -56,3 +56,4 @@ class Rectangle:
         for j in range(self.__width):
             rec.append('#')
         print("\n")
+    return ("".join(rec))
