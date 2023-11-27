@@ -53,4 +53,4 @@ class Rectangle:
     rec = []
     for i in range(self.__height):
         for j in range(self.__width):
-            rec.append("#")
+            rec.append('#')
