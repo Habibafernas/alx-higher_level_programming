@@ -44,8 +44,6 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-    
-    def number_of_instances(self):
 
     def area(self):
         """Return the area of the Rectangle."""
@@ -82,4 +80,3 @@ class Rectangle:
         """Print a message for every deletion of a Rectangle."""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-
