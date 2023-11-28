@@ -78,7 +78,7 @@ class Rectangle:
             return (rect_1)
         return (rect_2)
 
-     def square(cls, size=0):
+    def square(cls, size=0):
         return (cls(size, size))
 
     def __str__(self):
