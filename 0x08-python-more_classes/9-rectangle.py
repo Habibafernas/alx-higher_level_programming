@@ -105,12 +105,4 @@ class Rectangle:
         print("Bye rectangle...")
 
     def square(cls, size=0):
-        if cls.size == 0:
-            return ("")
-
-        rec =[]
-        for i in range(cls.__size):
-            [rec.append(str(self.print_symbol)) for j in range(cls.__size)]
-            if i != cls.__size - 1:
-                rec.append("\n")
-        return ("".join(rec))
+        return (cls(size, size))
