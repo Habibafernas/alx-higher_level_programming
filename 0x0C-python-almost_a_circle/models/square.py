@@ -28,4 +28,11 @@ class Square(Rectangle):
         """update the class"""
         if args and len(args) != 0:
             self.__init__(self.size, self.x, self.y)
-
+    
+    def to_dictionary(self):
+        """returns the dictionary representation of a square"""
+        return {"id": self.id,
+                "width": self.width,
+                "x": self.x,
+                "y": self.y
+                }
