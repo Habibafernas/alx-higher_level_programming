@@ -13,3 +13,19 @@ class Square(Rectangle):
      def __str__(self):
         """Return the dimentions."""
         return "[Square] ({}) {}/{} - {}/{}".format(self.id. self.x, self.y, self.width)
+
+    @property
+    def size(self):
+        """get the size of the a=square"""
+        return self.width
+
+    @setter
+    def size(self, value):
+        self.width = value
+        self.height = value
+
+    def update(self, *args, **kwargs):
+        """update the class"""
+        if args and len(args) != 0:
+            self.__init__(self.size, self.x, self.y)
+
