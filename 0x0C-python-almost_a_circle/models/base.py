@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Defines a base model class."""
-
+import json
 
 class Base:
     """defines a base model"""
@@ -22,3 +22,8 @@ class Base:
         if list_dictionaries is None or list_dictionaries = []:
             return "[]"
         return json.dumps(list_dictionaries)
+    
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """that writes the JSON string representation of list_objs"""
+        
