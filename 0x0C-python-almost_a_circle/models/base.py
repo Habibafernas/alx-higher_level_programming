@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Defines a base model class."""
 import json
+import csv
+import turtle
 
 class Base:
     """defines a base model"""
@@ -26,4 +28,10 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """that writes the JSON string representation of list_objs"""
-        
+        filename = cls.__name__ + ".json"
+        with open(filename, "w") as jsonfile:
+            if list_objs is None:
+                jsonfile.write("[]")
+            else:
+                list_dicts = [o.to_dictionary() for o in list_objs]
+                jsonfile.write(Base.to_json_string(list_dicts))
