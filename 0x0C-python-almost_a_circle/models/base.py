@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Defines a base model class."""
 import json
 import csv
@@ -57,7 +58,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """Return a list of classes instantiated from a file of JSON strings."""
+        """Return a list of classes from a file of JSON strings."""
         filename = str(cls.__name__) + ".json"
         try:
             with open(filename, "r") as jsonfile:
@@ -65,4 +66,3 @@ class Base:
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []
-
