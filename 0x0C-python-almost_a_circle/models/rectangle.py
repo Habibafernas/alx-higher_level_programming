@@ -86,7 +86,7 @@ class Rectangle(Base):
         """return the dimentions"""
         return"[Rectangle] {()} {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
 
-    def update(self, *args, **kwargs)
+    def update(self, *args, **kwargs):
         """update to the class"""
         if args and len(args) != 0:
             self.__init__(self.width, self.height, self.x, self.y)

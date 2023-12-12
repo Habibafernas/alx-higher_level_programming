@@ -3,7 +3,6 @@
 """Defines a base model class."""
 import json
 import csv
-import turtle
 
 
 class Base:
@@ -23,7 +22,7 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """returns the JSON string"""
-        if list_dictionaries is None or list_dictionaries = []:
+        if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
 
