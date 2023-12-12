@@ -4,6 +4,7 @@ import json
 import csv
 import turtle
 
+
 class Base:
     """defines a base model"""
 
@@ -17,14 +18,14 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-    
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """returns the JSON string"""
         if list_dictionaries is None or list_dictionaries = []:
             return "[]"
         return json.dumps(list_dictionaries)
-    
+
     @classmethod
     def save_to_file(cls, list_objs):
         """that writes the JSON string representation of list_objs"""
@@ -36,7 +37,7 @@ class Base:
                 list_dicts = [o.to_dictionary() for o in list_objs]
                 jsonfile.write(Base.to_json_string(list_dicts))
 
-     @staticmethod
+    @staticmethod
     def from_json_string(json_string):
         """Return the deserialization of a JSON string."""
         if json_string is None or json_string == "[]":
