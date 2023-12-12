@@ -31,7 +31,7 @@ class Rectangle(Base):
     def width(self):
         """get the width"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         if type(value) != int:
@@ -84,7 +84,11 @@ class Rectangle(Base):
 
     def __str__(self):
         """return the dimentions"""
-        return"[Rectangle] {()} {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+        return"[Rectangle] {()} {}/{} - {}/{}".format(self.id,
+                                                    self.x,
+                                                    self.y,
+                                                    self.width,
+                                                    self.height)
 
     def update(self, *args, **kwargs):
         """update to the class"""
