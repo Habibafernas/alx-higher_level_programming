@@ -84,7 +84,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """return the dimentions"""
-        return"[Rectangle] {()} {}/{} - {}/{}".format(self.id,
+        return"[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
                                                     self.x,
                                                     self.y,
                                                     self.width,
