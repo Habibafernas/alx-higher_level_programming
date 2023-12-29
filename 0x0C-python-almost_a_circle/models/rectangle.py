@@ -90,6 +90,7 @@ class Rectangle(Base):
                                                     self.width,
                                                     self.height)
 
+
     def update(self, *args, **kwargs):
         """update to the class"""
         if args and len(args) != 0:
