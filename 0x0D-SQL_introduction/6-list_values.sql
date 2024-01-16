@@ -1,2 +1,2 @@
--- Script that lists all rows of the table first_table from the database
-SHOW CREATE TABLE `first_table`
+-- Lists all rows of the table first_table in my MySQL server.
+SELECT * FROM `first_table`;
