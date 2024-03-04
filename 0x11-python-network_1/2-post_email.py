@@ -10,6 +10,7 @@ import sys
 import urllib.request
 import urllib.parse
 
+
 if __name__ == "__main__":
     url = sys.argv[1]
     v = {"email": sys.argv[2]}
