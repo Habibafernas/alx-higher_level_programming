@@ -3,7 +3,7 @@ const request = require('request');
 request(process.argv[2], function (err, response, body) {
   if (err) {
     console.log(err);
-  } else if (response.statusCode == 200) {
+  } else if (response.statusCode === 200) {
     const completed = {};
     const tasks = JSON.parse(body);
     for (const i in tasks) {
